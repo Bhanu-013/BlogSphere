@@ -1,16 +1,111 @@
-# React + Vite
+# BlogSphere - Full Stack Blogging Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+BlogSphere is a full-stack blogging platform where users can register, log in, create blog posts, read blogs, and interact through comments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* User Registration
+* User Login Authentication
+* JWT Authentication
+* Create Blog Posts
+* View All Blogs
+* View Single Blog Details
+* Comment System
+* Responsive User Interface
+* MongoDB Database Integration
+* RESTful APIs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the Oxlint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* React.js
+* React Router DOM
+* Axios
+* Bootstrap
+* Vite
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT
+* bcryptjs
+
+## Project Structure
+
+Frontend:
+
+* Home Page
+* Login Page
+* Register Page
+* Create Blog Page
+* Blog Details Page
+* Comment Section
+
+Backend:
+
+* Authentication APIs
+* Blog APIs
+* Comment APIs
+* MongoDB Database
+
+## Installation
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+## API Endpoints
+
+### Authentication
+
+POST /api/auth/register
+
+POST /api/auth/login
+
+### Blogs
+
+GET /api/posts
+
+GET /api/posts/:id
+
+POST /api/posts
+
+PUT /api/posts/:id
+
+DELETE /api/posts/:id
+
+### Comments
+
+GET /api/comments/:postId
+
+POST /api/comments
+
+## Future Enhancements
+
+* User Profiles
+* Blog Categories
+* Blog Search
+* Like System
+* Rich Text Editor
+* Image Uploads
+
+## Author
+
+Bhanu
